@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'chef', '>=11.0'
 gem 'rake'
 gem 'berkshelf'
+gem 'stove', '~> 3.2'
 
 group :test do
   gem "foodcritic", "~> 5.0"
