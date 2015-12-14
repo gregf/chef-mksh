@@ -1,0 +1,20 @@
+---
+driver_plugin: digitalocean
+driver_config:
+  require_chef_omnibus: latest
+
+platforms:
+- name: ubuntu-14.04
+- name: ubuntu-15.04
+- name: debian-7.9
+  provisioner:
+    sudo: false
+  busser:
+    sudo: false
+- name: debian-8.2
+- name: centos-6.7
+- name: centos-7.1
+suites:
+- name: default
+  run_list:
+  - recipe[mksh]
